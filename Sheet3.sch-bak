@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Ping"
+Date "2021-08-31"
+Rev "1"
+Comp "Andrei Salomatin"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -269,17 +269,6 @@ $EndComp
 Wire Wire Line
 	1150 1250 1500 1250
 Connection ~ 1150 1250
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 617529E0
-P 1500 750
-F 0 "#FLG0102" H 1500 825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1500 923 50  0000 C CNN
-F 2 "" H 1500 750 50  0001 C CNN
-F 3 "~" H 1500 750 50  0001 C CNN
-	1    1500 750 
-	1    0    0    -1  
-$EndComp
 Connection ~ 1150 750 
 $Comp
 L power:+9V #PWR0168
@@ -352,17 +341,12 @@ F 3 "~" H 1950 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1150 750  1500 750 
-Wire Wire Line
 	1950 1100 1950 1250
 Wire Wire Line
 	1950 1250 1500 1250
 Connection ~ 1500 1250
 Wire Wire Line
-	1500 750  1950 750 
-Wire Wire Line
 	1950 750  1950 800 
-Connection ~ 1500 750 
 $Comp
 L Diode:1N4001 D11
 U 1 1 6117A589
@@ -384,4 +368,6 @@ Wire Wire Line
 Wire Wire Line
 	2350 750  1950 750 
 Connection ~ 1950 750 
+Wire Wire Line
+	1150 750  1950 750 
 $EndSCHEMATC
